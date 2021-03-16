@@ -11,7 +11,7 @@ def innumbs():
     numb = True
     while numb == True:
         try:
-            innumb = float(input("Input numbers one at a time: "))
+            innumb = float(input("Input numbers one at a time \n If no new numbers enter N: "))
             numbers.append(innumb)
         except:
             numb = False
@@ -84,7 +84,7 @@ def Chevyshevs_Theorem():
         sub_numb = mean - number * std
         sum_numb = mean + number * std
         print(f'\nNumber: {number}\nDifference: {sub_numb}\nSum: {sum_numb}')
-    # consider()
+    consider()
     question = input("Would you like a Z score? y/n: ")
     if question == "y":
         x = float(input("What is x?: "))
@@ -186,7 +186,7 @@ yaxis = listranges
 
 
 #
-def graph():
+def bargraph():
     x = np.array(upper_lims)
     print(x)
     y = np.array(yaxis)
@@ -194,11 +194,24 @@ def graph():
     plt.xlabel("Ranges")
     plt.ylabel("Frequency")
     plt.bar(x, y)
-    plt.scatter(x, y)
     plt.show()
 
 
-graph()
+bargraph()
+
+def linegraph():
+    x = np.array(upper_lims)
+    print(x)
+    y = np.array(yaxis)
+    print(y)
+    plt.xlabel("Ranges")
+    plt.ylabel("Frequency")
+    plt.bar(x, y)
+    plt.plot(x, y)
+    plt.show()
+
+
+linegraph()
 
 """ Test A has a mean score of 72 with a std of 11.
     Student A scores 80 on this test. (Z-score: 0.7272727272727273)
