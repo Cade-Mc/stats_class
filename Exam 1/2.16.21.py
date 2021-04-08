@@ -169,9 +169,10 @@ What is the probability of P(A or B or C)
 
 
 
-fracs = []
+
 
 def probab_frac():
+    fracs = []
     x = True
     while x:
         a = float(input("How much: "))

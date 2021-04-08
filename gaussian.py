@@ -31,6 +31,7 @@ def single_sample_distr(mu, sigma, x1, sample):
           f"\nBelow: {round(b_gaussian * 100, 3) }% \nAbove: {round(a_gaussian * 100, 3)}%")
     return b_gaussian, a_gaussian
 
+
 def double_gaussian(mu, sigma, x1, x2):
     print("Double Gaussian Distribution: \n")
     b_gaussian = st.norm(mu, sigma).cdf(x1)
@@ -39,6 +40,7 @@ def double_gaussian(mu, sigma, x1, x2):
     between = abs(between)
     print(f"\nThe P() score is between {x1} and {x2}: "
           f"\n{round(between * 100, 3)}%")
+
 
 def double_sample_distr(mu, sigma, x1, x2, sample):
     print("Double Sample Distribution: \n")
@@ -73,6 +75,6 @@ def distributions(mu, sigma, x1, x2=None, sample=None):
         double_sample_distr(mu, sigma, x1, x2, sample)
 
 
-# distributions(200, 20, 198, sample=25)
+distributions(42.0, 4.0, 40.6, sample=50)
 
 

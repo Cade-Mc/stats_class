@@ -52,7 +52,7 @@ Expiremnt 3:
 """
 
 
-def p():
+def basic_prob():
     out = float(input("How many outcomes are in the variable?: "))
     sample = float(input("How many possible outcomes exist?: "))
     answer = float(out/sample)

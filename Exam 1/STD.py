@@ -58,12 +58,14 @@ def standard_deviation():
     squared_sum = sum(squared_num)
     print(f'Squared sum: {squared_sum}')
 
-    deviation = squared_sum / len(numbers)
-    print(f'\nDeviation: {deviation}')
+    pop_deviation = squared_sum / len(numbers)
+    print(f'\nDeviation: {pop_deviation}')
+    samp_dev = squared_sum / (len(numbers) - 1)
 
-    std = sqrt(deviation)
-    print(f'Standard Deviation: {std}')
-    print("\n")
+    samp_std = sqrt(samp_dev)
+    pop_std = sqrt(pop_deviation)
+    print(f'Pop Standard Deviation: {pop_std}')
+    print(f'Samp Standard Deviation: {samp_std}')
 
 
 def consider():
