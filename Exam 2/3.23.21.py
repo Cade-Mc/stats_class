@@ -18,7 +18,7 @@ Exercise
             = 52 / 5 
                 = 10.4
                 
-X              (x - x)^2              = 
+X              (X - x)^2              = 
 8              (8 - 10.4)^2             5.760
 10             (10 - 10.4)^2            0.160
 11                                      0.359
@@ -114,8 +114,7 @@ def con_int_normal_dist(n, s, X=None):
     print(f"99% | {round(X - percent99, 2)} < µ < {round(X + percent99, 2)} | {round(percent99, 2)}")
 
 
-con_int_s(40, 1.63, 8.72)
-
+con_int_normal_dist(35, 12, 145)
 """
 Remark: The higher the confidence, the wider the interval.
 

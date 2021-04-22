@@ -21,7 +21,7 @@ Example:
     p = x / n  = 71 / 120 
         q = 1 - p   or 120/120 - 71/120 = 49 / 120
         
-Confidence intervals for the proportion of the pop that plan to vote yes are in the form
+Confidence intervals for the proportion of the  pop that plan to vote yes are in the form
     p - E < p < P + E
     
 What is E? E = 1.96 √( p * q / n ) for a 95% interval
